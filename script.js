@@ -5,7 +5,7 @@ btn.addEventListener("click", () => {
 
   let h1 = document.createElement("h1");
   h1.innerText = "Entered Metaverse";
-  h1.id = "status";  // 🔥 This is the key change
 
-  p.replaceWith(h1);
+  p.innerHTML = "";       // Clear existing content (optional)
+  p.appendChild(h1);      // ✅ Insert <h1> as a descendant
 });
